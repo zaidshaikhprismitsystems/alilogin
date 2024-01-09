@@ -5,11 +5,11 @@ import { useRouter } from 'next/navigation'
 export default function Home() {
 
   const [isRedirecting, setIsRedirecting] = useState(false);
-
+//   https://prismcodehub.com/aliexpress/
   const config = {
     clientId: '504040',
     clientSecret: 'usRWt1Y4mdzgdWEmjimiVdXO0fPn5IPZ',
-    redirectUri: 'https://prismcodehub.com/aliexpress/',
+    redirectUri: 'https://alilogin-2gsqh0324-zaidshaikhprismitsystems.vercel.app/',
     baseUrl: 'https://api-sg.aliexpress.com'
   };
 
