@@ -89,7 +89,7 @@ const [isRedirecting, setIsRedirecting] = useState(false);
 
     console.log(final);
 
-    await axios.get('https://api-sg.aliexpress.com/sync?app_key=504104&code='+code+'&format=json&method=/auth/token/create&sign_method=md5&timestamp=1704797807514&sign=4158D7380440DF74FA5B2581542899F2', parameters)
+    await axios.get(final)
     .then(response => {
       // Handle successful response
       console.log(response.data);
