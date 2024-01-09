@@ -69,7 +69,7 @@ const [isRedirecting, setIsRedirecting] = useState(false);
     let parameters: any;
     // Sort keys alphabetically
     Object.keys(param).sort().forEach(key => {
-    const value = encodeURIComponent(param[key]);
+    const value = param[key].toString();
     console.log(value);
     console.log(param[key].toString());
     
