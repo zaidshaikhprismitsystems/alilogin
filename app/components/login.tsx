@@ -74,7 +74,7 @@ const [isRedirecting, setIsRedirecting] = useState(false);
     });
 
     // Generate the signature
-    let sign = parameters.replace(/&/g, '').replace(/=/g, '');
+    let sign = encodeURIComponent(parameters.replace(/&/g, '').replace(/=/g, ''));
     
     console.log(sign);
 
