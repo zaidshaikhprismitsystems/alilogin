@@ -63,7 +63,7 @@ const [isRedirecting, setIsRedirecting] = useState(false);
     param.app_key = config.clientId;
     param.code = new URLSearchParams(window.location.search).get('code');
     param.format = 'json';
-    param.method = new URL('/auth/token/create');
+    param.method = '/auth/token/create';
     param.sign_method = 'md5';
     param.timestamp = new Date().getTime();
     let parameters: any;
