@@ -76,11 +76,27 @@ const [isRedirecting, setIsRedirecting] = useState(false);
     // Generate the signature
     let sign = encodeURIComponent(parameters.replace(/&/g, '').replace(/=/g, ''));
     
+    console.log(config);
+
     console.log(sign);
 
     const final = url+"?"+ parameters + "&sign=" + md5(config.clientSecret+sign+config.clientSecret).toUpperCase();
     
     console.log(final);
+
+    await axios.post(final, parameters, {
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
+      },
+    })
+    .then(response => {
+      // Handle successful response
+      console.log(response.data);
+    })
+    .catch(error => {
+      // Handle error
+      console.error(error);
+    });
 
     //   const response = await axios.post(finalUrl, params, {
     //     headers: {
