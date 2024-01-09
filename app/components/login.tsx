@@ -11,7 +11,7 @@ export default function Home() {
   const config = {
     clientId: '504104',
     clientSecret: 'HuaGb3SBPjtBPTFKJVUcJe8KgcOiLcRv',
-    redirectUri: 'https://alilogin-2gsqh0324-zaidshaikhprismitsystems.vercel.app/auth',
+    redirectUri: 'https://alilogin.vercel.app/',
     baseUrl: 'https://api-sg.aliexpress.com'
   };
 
