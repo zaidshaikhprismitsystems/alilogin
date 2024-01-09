@@ -6,10 +6,12 @@ export default function Home() {
 
   const [isRedirecting, setIsRedirecting] = useState(false);
 //   https://prismcodehub.com/aliexpress/
+// 504040
+// usRWt1Y4mdzgdWEmjimiVdXO0fPn5IPZ
   const config = {
-    clientId: '504040',
-    clientSecret: 'usRWt1Y4mdzgdWEmjimiVdXO0fPn5IPZ',
-    redirectUri: 'https://alilogin-2gsqh0324-zaidshaikhprismitsystems.vercel.app/',
+    clientId: '504104',
+    clientSecret: 'HuaGb3SBPjtBPTFKJVUcJe8KgcOiLcRv',
+    redirectUri: 'https://alilogin-2gsqh0324-zaidshaikhprismitsystems.vercel.app/auth',
     baseUrl: 'https://api-sg.aliexpress.com'
   };
 
