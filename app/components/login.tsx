@@ -74,7 +74,7 @@ const [isRedirecting, setIsRedirecting] = useState(false);
     });
 
     // Generate the signature
-    let sign = encodeURIComponent(parameters.replace(/&/g, '').replace(/=/g, ''));
+    let sign = parameters.replace(/&/g, '').replace(/=/g, '');
     
     console.log(config);
 
@@ -82,6 +82,8 @@ const [isRedirecting, setIsRedirecting] = useState(false);
 
     const final = url+"?"+ parameters + "&sign=" + md5(config.clientSecret+sign+config.clientSecret).toUpperCase();
     
+    console.log(parameters);
+
     console.log(final);
 
     await axios.post(final, parameters, {
